@@ -1,7 +1,7 @@
 
 .onAttach <- function(libname, pkgname){
   ## Setup python connection
-  py <- findpython::can_find_python_cmd(required_modules = "pattern.db")
+  py <- findpython::can_find_python_cmd(required_modules = "pattern3")
   if(py){
     if(!PythonInR::pyIsConnected()){
       PythonInR::pyConnect(attributes(py)$python_cmd)
